@@ -1,6 +1,7 @@
 package com.sAnimVsa.gardening_mod.block;
 
 import com.sAnimVsa.gardening_mod.GardeningMod;
+import com.sAnimVsa.gardening_mod.item.ModCreativeModTab;
 import com.sAnimVsa.gardening_mod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,8 +20,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, GardeningMod.MOD_ID);
 
-    public static final RegistryObject<Block> FOSSIL_BLOCK = registerBlock("petrified_plant_block",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(9f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_FOOD);
+    public static final RegistryObject<Block> PETRIFIED_PLANT = registerBlock("petrified_plant_block",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(9f).requiresCorrectToolForDrops()), ModCreativeModTab.GARDENINGMOD_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
