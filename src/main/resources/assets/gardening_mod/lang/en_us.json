@@ -1,3 +1,6 @@
 {
-  "item.gardening_mod.poop": "poop"
+  "item.gardening_mod.poop": "Poop",
+  "item.gardening_mod.fertilizer": "Fertilizer",
+
+  "block.gardening_mod.petrified_plant_block": "Petrified plant"
 }

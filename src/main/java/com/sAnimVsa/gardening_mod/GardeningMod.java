@@ -1,5 +1,6 @@
 package com.sAnimVsa.gardening_mod;
 
+import com.sAnimVsa.gardening_mod.block.ModBlocks;
 import com.sAnimVsa.gardening_mod.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -32,6 +33,8 @@ public class GardeningMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
+
 
         eventBus.addListener(this::setup);
 
