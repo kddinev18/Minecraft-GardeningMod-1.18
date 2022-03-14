@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "gardening_mod:block/petrified_plant_block"
-  }
-}

@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, GardeningMod.MOD_ID);
 
-    public static final RegistryObject<Block> PETRIFIED_PLANT = registerBlock("petrified_plant_block",
+    public static final RegistryObject<Block> PETRIFIED_PLANT_ORE = registerBlock("petrified_plant_ore",
             ()-> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(9f).requiresCorrectToolForDrops()), ModCreativeModTab.GARDENINGMOD_TAB);
 
 
